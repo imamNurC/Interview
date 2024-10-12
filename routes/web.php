@@ -29,12 +29,15 @@ Auth::routes();
 
 Route::middleware(['auth'])->group(function () {
     Route::resource('posts', PostController::class);
-    Route::post('posts/{post}/comments', [CommentController::class, 'store'])->name('comments.store');
+    Route::post('posts/{post}', [CommentController::class, 'store'])->name('comments.store');
 
 
     //komentar
-    Route::put('comments/{comment}', [CommentController::class, 'update'])->name('comments.update');
-    Route::delete('comments/{comment}', [CommentController::class, 'destroy'])->name('comments.destroy');
+    Route::resource('comments', CommentController::class)->only(['edit', 'update', 'destroy']);
+
+
+    // Route::put('comments/{comment}', [CommentController::class, 'update'])->name('comments.update');
+    // Route::delete('comments/{comment}', [CommentController::class, 'destroy'])->name('comments.destroy');
 });
 
 Auth::routes();

@@ -1,4 +1,4 @@
-@extends('layout.mainlayout')
+@extends('custom_layout.mainlayout')
 {{-- @extends('layouts.app') --}}
 
 @section('content')
