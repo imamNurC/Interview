@@ -33,6 +33,8 @@ Proyek ini merupakan aplikasi berbasis web yang dibangun dengan framework Larave
 
 
 ![alt text](https://raw.githubusercontent.com/imamNurC/Interview/main/ss/db_design.png)
+
+
 Menggunakan pendekatan One to Many relationship pada table posts yang memiliki ID yang mewakili relasi di table comments sebagai foreign Key dengan kolom `post_id`. artinya design database untuk project ini mewakili dari tantangan yang di berikan. dengan design ini tujuan aplikasi memungkinkan dapat menampilkan data dari 2 tabel tersebut, baik berupa list maupun detil 
 
 ## Screenshot Aplikasi
