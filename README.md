@@ -9,7 +9,7 @@
 
 ## Penjelasan Project
 
-Proyek ini merupakan aplikasi berbasis web yang dibangun dengan framework Laravel 8, yang berfokus pada manajemen konten berupa postingan dan komentar. Dengan implementasi model Post dan Comment, aplikasi ini memungkinkan pengguna untuk membuat, membaca, dan berinteraksi dengan konten yang ada
+Proyek ini merupakan aplikasi berbasis web yang dibangun dengan framework Laravel 8, yang berfokus pada manajemen konten berupa postingan dan komentar. aplikasi ini memungkinkan pengguna untuk membuat post, membaca detail, dan berinteraksi dengan konten yang ada dengan pendekatan relasional 1 Postingan bisa memiliki banyak komentar
 
 ## Database Design
 
