@@ -31,7 +31,9 @@ Proyek ini merupakan aplikasi berbasis web yang dibangun dengan framework Larave
 | `created_at` | Timestamp | When the comment was created       |
 | `updated_at` | Timestamp | When the comment was last updated  |
 
+
 ![alt text](https://raw.githubusercontent.com/imamNurC/Interview/main/ss/db_design.png)
+Menggunakan pendekatan One to Many relationship pada table posts yang memiliki ID yang mewakili relasi di table comments sebagai foreign Key dengan kolom `post_id`. artinya design database untuk project ini mewakili dari tantangan yang di berikan. dengan design ini tujuan aplikasi memungkinkan dapat menampilkan data dari 2 tabel tersebut, baik berupa list maupun detil 
 
 ## Screenshot Aplikasi
 
@@ -59,7 +61,7 @@ Proyek ini merupakan aplikasi berbasis web yang dibangun dengan framework Larave
 
 ![alt text](https://raw.githubusercontent.com/imamNurC/Interview/main/ss/postDetail.png)
 
-### edit komentar di posy=tingan tersebut
+### edit komentar di postingan tersebut
 
 ![alt text](https://raw.githubusercontent.com/imamNurC/Interview/main/ss/editDetailComment.png)
 
@@ -130,6 +132,24 @@ Proyek ini merupakan aplikasi berbasis web yang dibangun dengan framework Larave
     "prefer-stable": true
 }
 
+```
+
+## Instalasi untuk keberlanjutan project
+setting kredensial pada .env pada nama database dan sesuaikan dengan database di Lokal masing masin
+
+Install laravel dependency
+```
+composer install
+```
+
+migrasi database struktur  
+```
+php artisan migrate
+```
+
+aktivasi key pada saat konfigurasi .env
+```
+php artisan key:generate
 ```
 
 ## License
