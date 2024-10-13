@@ -33,6 +33,34 @@
 
 ## Screenshot Aplikasi
 
+### login
+
+![alt text](https://raw.githubusercontent.com/imamNurC/Interview/main/ss/login.png)
+
+### Register
+
+![alt text](https://raw.githubusercontent.com/imamNurC/Interview/main/ss/register.png)
+
+### Create Post
+
+![alt text](https://raw.githubusercontent.com/imamNurC/Interview/main/ss/createPost.png)
+
+### List Semua Posts
+
+![alt text](https://raw.githubusercontent.com/imamNurC/Interview/main/ss/postList.png)
+
+### Edit Post By Id
+
+![alt text](https://raw.githubusercontent.com/imamNurC/Interview/main/ss/editPostDetail.png)
+
+### Post Detail with list semua comments untuk id tersebut
+
+![alt text](https://raw.githubusercontent.com/imamNurC/Interview/main/ss/postDetail.png)
+
+### edit komentar di posy=tingan tersebut
+
+![alt text](https://raw.githubusercontent.com/imamNurC/Interview/main/ss/editDetailComment.png)
+
 ## Dependency
 
 ```
