@@ -9,6 +9,8 @@
 
 ## Penjelasan Project
 
+Proyek ini merupakan aplikasi berbasis web yang dibangun dengan framework Laravel 8, yang berfokus pada manajemen konten berupa postingan dan komentar. Dengan implementasi model Post dan Comment, aplikasi ini memungkinkan pengguna untuk membuat, membaca, dan berinteraksi dengan konten yang ada
+
 ## Database Design
 
 | Column       | Type      | Description                    |
@@ -130,19 +132,8 @@
 
 ```
 
-1. Buat admin panel yang bisa manajemen data dari 2 tabel disertai fitur Login 2. Dua tabel tersebut memiliki relasi one to many 3. Buat page untuk menampilkan data 2 tabel tersebut, baik berupa list maupun detil 4. Buat fitur untuk pencarian data 5. Semua respon berbentuk Page 6. Gunakan pattern MVC 7. Gunakan repository git (github / gitlab / bitbucket) 8. Buat file readme di repository git yang setidaknya berisi
-   a. penjelasan project
-   b. desain database
-   c. screenshot aplikasi
-   d. dependency
-   e. informasi lain yang memudahkan developer selanjutnya meneruskan project ini 9. Buat video demo aplikasi menggunakan aplikasi screencast, setidaknya video berisi:
-   a. Login
-   b. CRUD 2 tabel
-   c. Testing API di postman semua endpoint
-   d. Penjelasan tentang fitur yang dibuat serta pemilihan data yang ditampilkan
-   e. Penjelasan implementasi pattern MVC dalam source code
-   f. Penjelasan implementasi Error Handling
-
 ## License
+
+Develop By Imam Nurcakra
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
