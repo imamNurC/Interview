@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
+<div class="container">
     <h1>Tambah Penghuni</h1>
     <form action="{{ route('penghuni.store') }}" method="POST">
         @csrf
@@ -46,7 +47,7 @@
 
         <button type="submit" class="btn btn-primary">Simpan</button>
     </form>
-
+</div>
     <script>
         // Menghitung umur berdasarkan tanggal lahir
         document.querySelector('[name="tanggal_lahir"]').addEventListener('change', function() {

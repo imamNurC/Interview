@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
+<div class="container">
     <h1>Edit Apartemen</h1>
     <form action="{{ route('apartemen.update', $apartemen->id) }}" method="POST">
         @csrf
@@ -23,4 +24,5 @@
         </div>
         <button type="submit" class="btn btn-primary">Perbarui</button>
     </form>
+</div>
 @endsection

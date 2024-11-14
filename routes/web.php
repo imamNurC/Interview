@@ -37,42 +37,22 @@ Route::middleware(['auth'])->group(function () {
     // Route::resource('comments', CommentController::class)->only(['edit', 'update', 'destroy']);
 
 
-    // Menampilkan daftar apartemen
     Route::get('apartemen', [ApartemenController::class, 'index'])->name('apartemen.index');
-
-    // Menampilkan form untuk menambahkan apartemen
     Route::get('apartemen/create', [ApartemenController::class, 'create'])->name('apartemen.create');
-
-    // Menyimpan data apartemen baru
     Route::post('apartemen', [ApartemenController::class, 'store'])->name('apartemen.store');
-
-    // Menampilkan detail apartemen berdasarkan ID
     Route::get('apartemen/{apartemen}', [ApartemenController::class, 'show'])->name('apartemen.show');
-
-    // Menampilkan form untuk mengedit apartemen
     Route::get('apartemen/{apartemen}/edit', [ApartemenController::class, 'edit'])->name('apartemen.edit');
-
-    // Mengupdate data apartemen berdasarkan ID
     Route::put('apartemen/{apartemen}', [ApartemenController::class, 'update'])->name('apartemen.update');
-
-    // Menghapus data apartemen berdasarkan ID
     Route::delete('apartemen/{apartemen}', [ApartemenController::class, 'destroy'])->name('apartemen.destroy');
 
 
 
-    // Menampilkan daftar penghuni
     Route::get('penghuni', [PenghuniController::class, 'index'])->name('penghuni.index');
-    // Menampilkan form untuk menambahkan penghuni
     Route::get('penghuni/create', [PenghuniController::class, 'create'])->name('penghuni.create');
-    // Menyimpan data penghuni baru
     Route::post('penghuni', [PenghuniController::class, 'store'])->name('penghuni.store');
-    // Menampilkan detail penghuni berdasarkan ID
     Route::get('penghuni/{penghuni}', [PenghuniController::class, 'show'])->name('penghuni.show');
-    // Menampilkan form untuk mengedit penghuni
     Route::get('penghuni/{id}/edit', [PenghuniController::class, 'edit'])->name('penghuni.edit');
-    // Mengupdate data penghuni berdasarkan ID
     Route::put('penghuni/{id}', [PenghuniController::class, 'update'])->name('penghuni.update');
-    // Menghapus data penghuni berdasarkan ID
     Route::delete('penghuni/{penghuni}', [PenghuniController::class, 'destroy'])->name('penghuni.destroy');
 
 

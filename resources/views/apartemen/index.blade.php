@@ -1,10 +1,11 @@
 @extends('layouts.app')
 
 @section('content')
+<div class="container">
     <h1>Daftar Apartemen</h1>
     <a href="{{ route('apartemen.create') }}" class="btn btn-primary mb-3">Tambah Apartemen</a>
-    <table class="table table-bordered">
-        <thead>
+    <table id="example" class="table table-striped table-bordered" style="width:100%">
+        <thead class="table-light">
             <tr>
                 <th>Nomor Apartemen</th>
                 <th>Lantai</th>
@@ -33,4 +34,22 @@
             @endforeach
         </tbody>
     </table>
+</div>
+
+<link href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $('#example').DataTable({
+
+
+        });
+    });
+</script>
+
 @endsection
+
+@push('scripts')
+    
+@endpush

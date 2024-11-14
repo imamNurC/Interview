@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
+<div class="container">
     <h1>Tambah Apartemen</h1>
     <form action="{{ route('apartemen.store') }}" method="POST">
         @csrf
@@ -22,4 +23,5 @@
         </div>
         <button type="submit" class="btn btn-primary">Simpan</button>
     </form>
+</div>
 @endsection
