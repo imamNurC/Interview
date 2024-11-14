@@ -7,61 +7,9 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-## Penjelasan Project
+## Coding Interview
 
-Proyek ini merupakan aplikasi berbasis web yang dibangun dengan framework Laravel 8, yang berfokus pada manajemen konten berupa postingan dan komentar. aplikasi ini memungkinkan pengguna untuk membuat post, membaca detail, dan berinteraksi dengan konten yang ada dengan pendekatan relasional 1 Postingan bisa memiliki banyak komentar
-
-## Database Design
-
-| Column       | Type      | Description                    |
-| ------------ | --------- | ------------------------------ |
-| `id`         | Integer   | Primary key, auto-incrementing |
-| `title`      | String    | Title of the post              |
-| `body`       | Text      | Content of the post            |
-| `created_at` | Timestamp | When the post was created      |
-| `updated_at` | Timestamp | When the post was last updated |
-
-### `comments`
-
-| Column       | Type      | Description                        |
-| ------------ | --------- | ---------------------------------- |
-| `id`         | Integer   | Primary key, auto-incrementing     |
-| `post_id`    | Integer   | Foreign key referencing `posts.id` |
-| `comment`    | Text      | Content of the comment             |
-| `created_at` | Timestamp | When the comment was created       |
-| `updated_at` | Timestamp | When the comment was last updated  |
-
-![alt text](https://raw.githubusercontent.com/imamNurC/Interview/main/ss/db_design.png)
-
-## Screenshot Aplikasi
-
-### login
-
-![alt text](https://raw.githubusercontent.com/imamNurC/Interview/main/ss/login.png)
-
-### Register
-
-![alt text](https://raw.githubusercontent.com/imamNurC/Interview/main/ss/register.png)
-
-### Create Post
-
-![alt text](https://raw.githubusercontent.com/imamNurC/Interview/main/ss/createPost.png)
-
-### List Semua Posts
-
-![alt text](https://raw.githubusercontent.com/imamNurC/Interview/main/ss/postList.png)
-
-### Edit Post By Id
-
-![alt text](https://raw.githubusercontent.com/imamNurC/Interview/main/ss/editPostDetail.png)
-
-### Post Detail with list semua comments untuk id tersebut
-
-![alt text](https://raw.githubusercontent.com/imamNurC/Interview/main/ss/postDetail.png)
-
-### edit komentar di posy=tingan tersebut
-
-![alt text](https://raw.githubusercontent.com/imamNurC/Interview/main/ss/editDetailComment.png)
+By imam nurcakra
 
 ## Dependency
 
