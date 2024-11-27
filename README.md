@@ -7,17 +7,15 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-## Coding Interview
+## Coding Interview test
 
-By imam nurcakra
-soal 1
+
 ![alt text](https://raw.githubusercontent.com/imamNurC/Interview/refs/heads/main/ss/soal1.png)
 
-
-
-soal 2
 ![alt text](https://raw.githubusercontent.com/imamNurC/Interview/refs/heads/main/ss/soal2.png)
 
+
+By imam nurcakra
 ## Dependency
 
 ```
