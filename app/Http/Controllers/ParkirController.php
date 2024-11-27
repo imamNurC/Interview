@@ -64,6 +64,24 @@ class ParkirController extends Controller
 
     private function hitungBiayaParkir($kendaraan, $waktu_parkir)
     {
+
+        // Menghitung biaya parkir
+        $wp = $waktu_parkir - 1;
+        if ($wp <= 15) {
+
+            $biaya_parkir = $this->calculat($kendaraan, $wp);
+
+            // Memastikan biaya tidak melebihi batas maksimal 15 jam
+        } else {
+            $wp = 15;
+            $biaya_parkir = $this->calculat($kendaraan, $wp);
+        }
+
+        return $biaya_parkir;
+    }
+
+    private function calculat($kendaraan, $wp)
+    {
         // Tarif dasar
         $tarif_masuk_motor = 2000;
         $tarif_masuk_mobil = 5000;
@@ -80,19 +98,12 @@ class ParkirController extends Controller
             $tarif_per_jam = $tarif_parkir_mobil_perjam;
         }
 
-        // Menghitung biaya parkir
-        $wp = $waktu_parkir - 1;
         $biaya_parkir = $biaya_masuk + ($wp * $tarif_per_jam);
 
         // Diskon untuk parkir >= 5 jam
-        if ($waktu_parkir >= 5) {
-            $kelipatan_diskon = floor($waktu_parkir / 5);
+        if ($wp >= 5) {
+            $kelipatan_diskon = floor($wp / 5);
             $biaya_parkir -= $kelipatan_diskon * $diskon;
-        }
-
-        // Memastikan biaya tidak melebihi batas maksimal 15 jam
-        if ($waktu_parkir > 15) {
-            $waktu_parkir = 15;
         }
 
         return $biaya_parkir;
