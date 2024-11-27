@@ -10,6 +10,11 @@
 ## Coding Interview
 
 By imam nurcakra
+soal 1
+![alt text](https://raw.githubusercontent.com/imamNurC/Interview/refs/heads/main/ss/soal1.png)
+
+soal 2
+![alt text](https://raw.githubusercontent.com/imamNurC/Interview/refs/heads/main/ss/soal2.png)
 
 ## Dependency
 
